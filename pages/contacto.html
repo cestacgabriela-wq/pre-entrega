@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,400;1,600;1,700&display=swap""
+    rel="hoja de estilo"
+    />
+     <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto-Mi Tienda</title>
+    
+  </head>
+  <body>
+   
+  <header>
+      <div class="div-logo"><a class="logo" href="../index.html">LOGO</a></div>
+      
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+    <main>
+    <h1 class="titulo-contacto text-secondary">Contacto</h1>
+
+    <form class="form-contacto" action="https://formsubmit.co/cestacgabriela@gmail.com" method="POST">
+      
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta..." required></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde tu tienda!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html">
+
+      <button type="submit" class="btn-enviar">Enviar mensaje</button>
+    </form>
+  </main>
+
+  
+  </body>
+</html>
